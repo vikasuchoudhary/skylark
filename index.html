@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to Skylark Solution India Pvt. Ltd.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Skylarksolution.com!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img width="100px" height="60px" src="logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Website Development</a></li>
+              <li><a class="dropdown-item" href="#">E-Commerce Virtual Assistance</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Mobile Application Development</a></li>
+              <li><a class="dropdown-item" href="#">Software Development</a></li>
+              <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to Skylark</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get an Skylark Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/user/erondu/1400x500" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Skylark Technology</h5>
+          <p>Technology News, Development, Trends</p>
+          <button class="btn btn-danger"> Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x500/?code" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>The Best Coding Technology</h5>
+          <p>Technology News, Development, Trends</p>
+          <button class="btn btn-danger"> Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x500/?tech" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Award Winning Technology</h5>
+          <p>Technology News, Development, Trends</p>
+          <button class="btn btn-danger"> Technology</button>
+          <button class="btn btn-primary">Web Development</button>
+          <button class="btn btn-success">Tech fun</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Global Conference</h3>
+            <div class="mb-1 text-muted">Oct 5</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+              lead-in to additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://source.unsplash.com/500x700/?tech,code" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Learn Design</h3>
+            <div class="mb-1 text-muted">Oct 5</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250"
+              src="https://source.unsplash.com/500x700/?tech,code,laptop" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">It all started with Skylark Idea's. <span class="text-muted">It’ll blow
+            your
+            mind.</span></h2>
+        <p class="lead">Skylark Technologies, Concept Connexion’s flagship brand, is India’s fast-growing Web,
+          Mobile App Development and Digital Marketing company located in Nagpur, which is implementer of
+          cutting-edge technology. We offer customer-oriented services in multiple industry sectors with an
+          aim of providing quality services & implement the effective strategies which best suits to our
+          customer requirements.</p>
+      </div>
+      <div class="col-md-5 ">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="https://source.unsplash.com/400x400/?tech" alt="">
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">We started Skylark Solution India Pvt. Ltd. in 2021 <span
+            class="text-muted">It’ll blow
+            your
+            mind.</span></h2>
+        <p class="lead">Our team is trained and experienced in handling global clientele which are
+          from different domains, understanding their requirements and assisting them to reach their final
+          destination. </p>
+      </div>
+      <div class="col-md-5 order-md-1 ">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="https://source.unsplash.com/400x400/?webpage" alt="">
+      </div>
+    </div>
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Digital Services Provider.<span class="text-muted">It’ll blow your
+            mind.</span></h2>
+        <p class="lead">Here I’m excited to share some of the best digital marketing websites with you – they
+          will teach you everything you need to know about digital marketing. The websites are divided into
+          five categories: digital marketing, content marketing, SEO, social media marketing, and
+          pay-per-click (PPC), and each contains a link to a post.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="https://source.unsplash.com/400x400/?blogs" alt="">
+      </div>
+    </div>
+  </div>
+  <h2>      </h2>
+  <h1>        </h1>
+  <h2>   </h2>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-header1">
+                <h2>Our Services</h2>
+                <p>we provide all the services which is given below.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 py-3 py-sm-0">
+        <div class="card">
+          <img src="image1.png" class="card-img-top" alt="..." height="200" width="400">
+          <div class="card-body">
+            <h5 class="card-title">Social Media Marketing</h5>
+            <p class="card-text">Social media is an essential piece of your business marketing strategy. Social
+              platforms help you connect with your customers, increase awareness about your brand, and boost your leads
+              and sales. It includes Facebook, Instagram, Twitter, LinkdIn, Pinterest, YouTube etc. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 py-3 py-sm-0">
+        <div class="card h-200 w-100">
+          <img src="image2.png" class="card-img-top" alt="..." height="200" width="400">
+          <div class="card-body">
+            <h5 class="card-title">Website Development</h5>
+            <p class="card-text">The answer to these concerns is that a business website can provide so many more
+              benefits. Establishing trust, strengthening your brand, forging better customer relations, and
+              informing a wider group of people about your business’s capabilities are all key
+              benefits</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 py-3 py-sm-0">
+        <div class="card h-200 w-100">
+          <img src="image3.png" class="card-img-top" alt="..." height="200" width="400">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce Virtual Assistance</h5>
+            <p class="card-text">WWe provide professionals with sheer expertise in the domain to keep it running easily,
+              keep
+              it new with new illustrations, include features that become fundamental and manage your
+              complete store. Ecommerce Platform: Amazon, Flipkart, Myntra, eBay, Etsy, Snapdeal,
+              etc.,</p>
+
+          </div>
+        </div>
+      </div>
+
+      <h2> </h2>
+      <h2> </h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 py-3 py-sm-0">
+            <div class="card">
+              <img src="image4.png" class="card-img-top" alt="..." height="200" width="400">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Application Development</h5>
+                <p class="card-text">Mobile apps are very convenient for customers, as they are usually designed with
+                  usability in mind. The benefits of mobile apps are even greater when businesses decide to develop a
+                  custom mobile app with more flexibility and features. </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 py-3 py-sm-0">
+            <div class="card h-200 w-100">
+              <img src="image5.png" class="card-img-top" alt="..." height="200" width="400">
+              <div class="card-body">
+                <h5 class="card-title">Software Development</h5>
+                <p class="card-text">Software Development (ERPs) is an essential part for running a business. It
+                  guarantees an
+                  increase in productivity and efficiency with minimal effort. Software is built to suit a
+                  particular business or an organization to fulfil its specific business-centric
+                  requirements.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 py-3 py-sm-0">
+            <div class="card h-200 w-100">
+              <img src="image6.png" class="card-img-top" alt="..." height="200" width="400">
+              <div class="card-body">
+                <h5 class="card-title">Graphic Designing</h5>
+                <p class="card-text">We offer Logo Design, Banner Design, Visual Identity Packages, Business Cards &
+                  Business
+                  Systems, Brochures & Catalogs, Marketing Materials, Multimedia Presentations, Product
+                  Packaging, Signage & Point-of-Sale Materials, Trade Show Booths & Media, etc.</p>
+
+              </div>
+            </div>
+          </div>
+
+
+          
+
+          <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>© 2011–2022 Skylark, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+          </footer>
+          <!-- Optional JavaScript; choose one of the two! -->
+
+          <!-- Option 1: Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+
+          <!-- Option 2: Separate Popper and Bootstrap JS -->
+          <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
